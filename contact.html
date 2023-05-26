@@ -44,67 +44,84 @@
 </head>
 
 <body>
-  <header>
-    <!-- Small Navbar -->
-    <div class="row">
-      <nav id="small-nav" class="">
-        <div class="">
-          <a id="logo" href="">
-            <!-- <img src="http://placekitten.com/50/50" /> -->
-            <h1>Fusion Restaurant</h1>
-            <h2>& Live Music</h2>
-          </a>
+    <header>
+        <!-- Small Navbar -->
+        <div class="row">
+          <nav id="small-nav" class="">
+            <div class="">
+              <a id="logo" href="">
+                <!-- <img src="http://placekitten.com/50/50" /> -->
+                <h1>Fusion Restaurant</h1>
+                <h2>& Live Music</h2>
+              </a>
+            </div>
+            <div id="links" class="">
+              <ul id="">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menus.html">Our Menus</a></li>
+                <li><a href="events.html">Live Events</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="jobs.html">Jobs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+          </nav>
+        
+          <!-- Large Navbar -->
+          <nav id="large-nav" class="">
+            <div id="margin-fix" class="one-quarter column">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menus.html">Our Menus</a></li>
+                <li><a href="events.html">Live Events</a></li>
+              </ul>
+            </div>
+            <div id="margin-fix" class="one-half column">
+            <a href="index.html">
+              <h1>Fusion Restaurant</h1>
+              <h2>& Live Entertainment</h2>
+            </a>
+            </div>
+            <div id="margin-fix" class="one-quarter column">
+              <ul>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="jobs.html">Jobs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </nav>
         </div>
-        <div id="links" class="">
-          <ul id="">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Our Menus</a></li>
-            <li><a href="#">Live Events</a></li>
-            <li><a href="">Reservations</a></li>
-            <li><a href="">Jobs</a></li>
-            <li><a href="">Contact</a></li>
-          </ul>
-        </div>
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-          </a>
-      </nav>
-    
-      <!-- Large Navbar -->
-      <nav id="large-nav" class="">
-        <div id="margin-fix" class="one-quarter column">
-          <ul>
-            <li><a href="#top">Home</a></li>
-            <li><a href="#">Our Menus</a></li>
-            <li><a href="#">Live Events</a></li>
-          </ul>
-        </div>
-        <div id="margin-fix" class="one-half column">
-        <a href="">
-          <h1>Fusion Restaurant</h1>
-          <h2>& Live Entertainment</h2>
-        </a>
-        </div>
-        <div id="margin-fix" class="one-quarter column">
-          <ul>
-            <li><a href="">Reservations</a></li>
-            <li><a href="">Jobs</a></li>
-            <li><a href="">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-  </header>
+      </header>
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
-    <div class="row">
-      <div class="one-half column" style="margin-top: 25%">
-        <h4>Basic Page</h4>
-        <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
-      </div>
-    </div>
+        <form action="mailto:Fusion.Venice@gmail.com" method="post">
+            <div id="contact-form" class="row">
+            <div class="six columns">
+                <label for="EmailInput">Your email</label>
+                <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="EmailInput">
+            </div>
+            <div class="six columns">
+                <label for="RecipientInput">Reason for contacting</label>
+                <select class="u-full-width" id="RecipientInput">
+                <option value="Option 1"></option>
+                <option value="Option 2"></option>
+                <option value="Option 3"></option>
+                </select>
+            </div>
+            </div>
+            <label for="Message">Message</label>
+            <textarea class="u-full-width" placeholder="" id="Message"></textarea>
+            <label class="-send-yourself-copy">
+            <input type="checkbox">
+            <span class="label-body">Send a copy to yourself</span>
+            </label>
+            <input class="button-primary" type="submit" value="Submit">
+        </form>
   </div>
 
 <!-- End Document

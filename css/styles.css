@@ -1,5 +1,29 @@
 body{scroll-behavior: smooth;}
 
+body {
+    /* The image used */
+    background-image: url("https://images.pexels.com/photos/6542789/pexels-photo-6542789.jpeg");
+  
+    /* Set a specific height */
+    min-height: 6000px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+  }
+
+.container{background-color: white;
+    padding:25px;
+    margin-top:15vh;
+    margin-bottom:15vh;}
+
+#container-fix{min-width: 100vw;
+    background-color:white;}
+
+.row{background-color:white;}
+
 @media (max-width: 600px) {
 
 #large-nav {display: none;}
@@ -52,12 +76,17 @@ body{scroll-behavior: smooth;}
     padding:auto;}
 
 #large-nav {width:100vw;
-    height:15vh;
+    height:100px;
     display:flex;
-    z-index:999;}
+    z-index:999;
+    background-color: white;}
 
 #large-nav a {color:black;
     text-decoration:none;}
+
+#large-nav a:hover{text-decoration: underline;}
+
+#large-nav a.active{text-decoration: underline;}
 
 #large-nav h1{text-align:center;
     font-size: 3.5rem;
@@ -70,7 +99,7 @@ body{scroll-behavior: smooth;}
     white-space: nowrap;}
 
 #large-nav ul{display:flex;
-    margin:auto;
+    margin-top:35px;
     padding:auto;
     justify-content: center;
     align-items: center;}
