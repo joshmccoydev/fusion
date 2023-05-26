@@ -99,12 +99,24 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
     <div class="row">
-      <div class="one-half column">
-        <h4>Basic Page</h4>
-        <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
+      <div class="menu-container">
+        <div class="menu-links">
+          <a href="#" onclick="changeMenu('http://placekitten.com/600/1000')">Lunch</a>
+          <a href="#" onclick="changeMenu('http://placekitten.com/700/1000')">Dinner</a>
+          <a href="#" onclick="changeMenu('http://placekitten.com/900/1000')">Cocktails</a>
+          <a href="#" onclick="changeMenu('http://placekitten.com/500/1000')">Beer & Wine</a>
+        </div>
+        <br />
+        <img id="menu-image" src="http://placekitten.com/800/1000" alt="Menu Image" />
       </div>
     </div>
   </div>
+  <script>
+  function changeMenu(imagePath) {
+    var menuImage = document.getElementById('menu-image');
+    menuImage.src = imagePath;
+  }
+  </script>
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
