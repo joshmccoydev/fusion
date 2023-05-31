@@ -1,30 +1,40 @@
-body{scroll-behavior: smooth;}
+body{scroll-behavior: smooth;
+    background: lightgray;}
 
-body {
-    /* The image used */
+/*body {
+  
     background-image: url("https://images.pexels.com/photos/16710268/pexels-photo-16710268/free-photo-of-asparagus-with-lemon-on-plate-on-table.jpeg");
   
-    /* Set a specific height */
+
     min-height: 100vh;
 
-    /* Create the parallax scrolling effect */
+    
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size:cover;
   }
+  */
 
-.container{background-color: white;
+.jumbotron {
+    background-image: url(https://images.pexels.com/photos/16710268/pexels-photo-16710268/free-photo-of-asparagus-with-lemon-on-plate-on-table.jpeg);
+    height: 100vh;
+    background-position: center 20%;
+    background-size: cover;
+ }
+
+.container{background-color: lightgray;
     padding:25px;
-    margin-top:15vh;
-    margin-bottom:15vh;}
+    margin-top:5vh;
+    margin-bottom:5vh;}
 
 #container-fix{min-width: 100vw;
-    background-color:white;}
+    background-color:lightgray;}
 
-.row{background-color:white;}
+.row{background-color:lightgray;}
 
-.home-buttons{width:100%;}
+.home-buttons{width:30%; background:white;text-align: center; vertical-align: middle;}
+.home-button-top{margin-top:40vh;}
 
 .menu-container {
     text-align: center;
@@ -45,7 +55,11 @@ body {
   .menu-links a:hover {
     text-decoration: underline;
   }
-  
+
+footer{text-align: center;
+    position: fixed; 
+    bottom:0;
+    min-width: 100vw;}
 
 @media (max-width: 600px) {
 
@@ -66,7 +80,7 @@ body {
     margin-left:10px;}
 
 #small-nav a#logo{text-decoration: none;
-    color:white;} 
+    color:lightgray;} 
 
 #small-nav #links{display:none;}
 
@@ -74,12 +88,12 @@ body {
     text-align:center;
     list-style-type: none;}
 
-#small-nav ul li a{color: white;
+#small-nav ul li a{color: lightgray;
     display: block;
     text-decoration: none;}
 
 #small-nav a.icon {background:#333;
-    color:white;
+    color:lightgray;
     display: block;
     position: absolute;
     right: 0;
@@ -103,7 +117,7 @@ body {
     height:125px;
     display:flex;
     z-index:999;
-    background-color: white;}
+    background-color: lightgray;}
 
 #large-nav a {color:black;
     text-decoration:none;}
